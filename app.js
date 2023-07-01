@@ -3,7 +3,7 @@ const app = express();
 const port = process.env.PORT || 3001;
 const path = require('path');
 
-app.use(express.static(path.join( __dirname, './dist/search-engine')));
+app.use(express.static(path.join( __dirname, './dist/myapp')));
 app.get("/", (req, res) => res.type('html').send(html));
 
 

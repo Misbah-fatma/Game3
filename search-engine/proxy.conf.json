@@ -1,0 +1,8 @@
+{
+    "/":{
+        "target":"https://www.omdbapi.com/",
+        "secure":true,
+        "changeOrigin":true
+        
+    }
+}

@@ -1,0 +1,21 @@
+<div class="results" *ngIf="this.searchServices.results.totalResults > 0">
+    <p>
+        Total Result :
+        {{this.searchServices.results.Search.length}}
+    </p>
+    <div class="result" *ngFor='let item of this.searchServices.results.Search; let i = index'>
+        <a href="#" class = "title" target = "_blank"></a>
+            <h4>
+                <em class = "fa fa-check-circle">
+                    {{item.Title}}
+                </em>
+            </h4>
+            <a href = "#" class="url" target="_blank"><img height="360" width="360" src= {{item.Poster}}></a>
+            <p></p>
+           <p>
+            {{item.Type}}<br>
+            {{item.Year}}<br>
+            {{item.imdbID}}
+           </p>
+    </div>
+ </div>
